@@ -1,0 +1,74 @@
+{
+  "title": "新疆燃气",
+  "config": {
+    "step": {
+      "user": {
+        "title": "燃气账号登录",
+        "description": "请输入燃气账号信息",
+        "data": {
+          "phone": "手机号",
+          "password": "密码"
+        }
+      },
+      "gas": {
+        "title": "燃气账号登录",
+        "description": "请输入燃气账号信息",
+        "data": {
+          "phone": "手机号",
+          "password": "密码"
+        }
+      }
+    },
+    "error": {
+      "missing_fields": "请填写账号和密码",
+      "invalid_auth": "登录失败，请检查账号或密码",
+      "cannot_connect": "无法连接到服务器"
+    },
+    "abort": {
+      "client_not_found": "集成未正确加载，请尝试重新加载或重启 Home Assistant。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "menu_options": {
+          "pricing": "计费模式"
+        }
+      },
+      "mode": {
+        "title": "计费模式",
+        "description": "选择计费模式",
+        "data": {
+          "pricing_mode": "计费模式"
+        }
+      },
+      "fixed": {
+        "title": "固定单价",
+        "description": "配置固定单价（单位：元/m³）",
+        "data": {
+          "fixed_price": "固定单价",
+          "tier_1_limit": "一阶梯气量上限",
+          "tier_1_price": "一阶梯单价",
+          "tier_2_limit": "二阶梯气量上限",
+          "tier_2_price": "二阶梯单价",
+          "tier_3_price": "三阶梯单价"
+        }
+      },
+      "tiered": {
+        "title": "阶梯计价",
+        "description": "配置阶梯价格（单位：元/m³）",
+        "data": {
+          "tier_1_limit": "一阶梯气量上限",
+          "tier_1_price": "一阶梯单价",
+          "tier_2_limit": "二阶梯气量上限",
+          "tier_2_price": "二阶梯单价",
+          "tier_3_price": "三阶梯单价"
+        }
+      }
+    },
+    "abort": {
+      "client_not_found": "集成未正确加载，请尝试重新加载或重启 Home Assistant。",
+      "unknown_error": "配置过程中发生未知错误，请稍后重试。"
+    }
+  }
+}
